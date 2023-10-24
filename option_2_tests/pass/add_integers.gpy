@@ -1,0 +1,5 @@
+fn sum(a: array(i32), index: i32) -> i32 {
+  if index == -1 then 0 else (get(a, index) + sum(a, index - 1))
+}
+
+let a = alloc(4, 10) in sum(a, 3)

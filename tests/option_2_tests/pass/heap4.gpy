@@ -1,0 +1,1 @@
+let a = alloc(1, alloc(1, 123)) in get(get(a, 0), 0)

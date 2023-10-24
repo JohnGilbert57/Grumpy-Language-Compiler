@@ -1,0 +1,11 @@
+fn triangle(n: i32) -> i32 {
+  let x = alloc(1, 0) in
+  let i = alloc(1, 0) in
+  (while get(i, 0) < n {
+    set(x, 0, (get(x, 0) + get(i, 0)));
+    set(i, 0, (get(i, 0) + 1))
+  };
+  get(x, 0))
+}
+
+triangle(100)

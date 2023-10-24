@@ -1,0 +1,4 @@
+fn f(x: i32) -> i32 { x }
+fn g(x: i32) -> i32 ( x + 1 )
+
+let fptr = if false then @f else @g in call(fptr, 3)

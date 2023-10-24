@@ -1,0 +1,2 @@
+% (let x (neg (neg (cond (== 1 0) false true)))
+       (seq tt (cond x (+ 1 (* (/ 2 3) (- 7 7))) (- (/ (/ 1 1) 1) 2))))

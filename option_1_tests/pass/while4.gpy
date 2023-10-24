@@ -1,0 +1,7 @@
+(fun printarray (a (array i32)) -> i32
+  (let i (alloc 1 0)
+  (while (< (get i 0) (size a))
+    (seq (print (get i 0))
+         (set i 0 (+ (get i 0) 1))))))
+%
+(let a (alloc 4 10) (printarray a))

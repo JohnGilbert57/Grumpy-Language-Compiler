@@ -1,0 +1,4 @@
+pass/*.s
+pass/*.result
+fail/*.s
+fail/*.result

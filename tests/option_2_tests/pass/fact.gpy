@@ -1,0 +1,5 @@
+fn fact(x: i32) -> i32 {
+  if 0 == x then 1 else x * fact(x - 1)
+}
+
+fact(5)

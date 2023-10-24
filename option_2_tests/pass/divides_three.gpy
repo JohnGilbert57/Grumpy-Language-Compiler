@@ -1,0 +1,4 @@
+fn divisiblebythree(n: i32) -> bool {
+   n / 3 * 3 == n
+}
+divisiblebythree(9)

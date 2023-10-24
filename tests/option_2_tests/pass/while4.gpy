@@ -1,0 +1,9 @@
+fn printarray(a: array(i32)) -> i32 {
+  let i = alloc(1, 0) in
+  while get(i, 0) < size(a) {
+    print(get(i, 0));
+    set(i, 0, get(i, 0) + 1)
+  }
+}
+
+printarray(alloc(4, 10))

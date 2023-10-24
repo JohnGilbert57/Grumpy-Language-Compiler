@@ -1,0 +1,9 @@
+fn f() -> i32 {
+  let i = alloc(1, 0) in
+  while get(i, 0) < 10000 {
+    set(i, 0, get(i, 0) + 1)
+  };
+  get(i, 0)
+}
+
+f()

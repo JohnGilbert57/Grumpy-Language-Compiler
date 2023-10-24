@@ -1,0 +1,5 @@
+fn f() -> unit {
+  print(let x = 2 in x + 5)
+}
+
+f()

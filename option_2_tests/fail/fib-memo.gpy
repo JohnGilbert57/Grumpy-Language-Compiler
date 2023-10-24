@@ -1,0 +1,10 @@
+fn fib(x: i32, a: array(i32), done: array(bool)) -> i32
+  let r = if 0 == x then 1 else
+      	  if 1 == x then 1 else
+	  (if get(done, x-1) then get(a, x-1) else fib(x-1, a, done)) +
+	  (if get(done, x-2) then get(a, x-2) else fib(x-2, a, done)) in
+  set(a, x, r);
+  set(done, x, true);
+  r
+
+let n = 20 in fib(n, alloc(n+1, 0), alloc(n+1, false))

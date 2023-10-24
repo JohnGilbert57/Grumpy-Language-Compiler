@@ -1,0 +1,10 @@
+(fun sum (a (array i32)) -> i32
+  (let acc (alloc 1 0)
+  (let i (alloc 1 0)
+  (seq (while (< (get i 0) (size a))
+         (seq (print (get i 0))
+              (seq (set acc 0 (+ (get acc 0) (get a (get i 0))))
+                   (set i 0 (+ (get i 0) 1)))))
+       (get acc 0)))))
+%
+(let a (alloc 4 10) (seq (print (size a)) (sum a)))

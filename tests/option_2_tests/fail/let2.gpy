@@ -1,0 +1,3 @@
+f(y: i32) -> i32 { let x = y in x + x }
+
+f(3)

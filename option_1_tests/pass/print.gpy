@@ -1,0 +1,3 @@
+(fun f -> unit (print (let x 2 (+ x 5))))
+%
+(f)

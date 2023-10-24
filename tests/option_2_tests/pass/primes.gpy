@@ -1,0 +1,7 @@
+fn isprime(n: i32, i: i32) -> bool {
+  if i == 1 then true else
+    if n / i * i == n then false else
+      isprime(n, i-1)
+}
+
+isprime(17, 16)
